@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random password generator - By Manav Nanda</title>
+  <link rel="icon" href="./images/key(1).png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&family=Karla:wght@800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="toggler">
+      <label class="switch">
+        <input type="checkbox" class="toggle" id="toggle" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <p class="text-accent">Generate a </p>
+    <p id="ran">random password</p>
+    <p id="ran2">Never use an insecure password again</p>
+    <div class="btns">
+      <button id="genbtn" onclick="renderpsw()">⚡ Super passwords</button>
+      <button id="funbtn" onclick="funnypsw()">🤣 Funny passwords</button>
+      <button id="weakbtn" onclick="weakpsw()">🥴 Weak passwords</button>
+
+    </div>
+
+    <hr>
+    <section class="sec">
+      <div class="password1 psw" id="pass1">⚫⚫⚫</div>
+      <div class="password2 psw" id="pass2">⚫⚫⚫</div>
+    </section>
+
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
